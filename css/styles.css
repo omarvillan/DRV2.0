@@ -1,0 +1,387 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --principal-color: #3a0074;
+    --amarillo: #ffff00;
+    --secundati-color: #0033FF;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eeeef8;
+    
+}
+.inactive{
+    display: none;
+}
+.black-screen{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: #0000005b;
+}
+.black-screen{
+    display: none;
+}
+
+/*header-----------------------------------------------------*/
+
+.header{
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    background-color:var(--principal-color);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin: auto 8px;
+    height: 60%;
+}
+.header-left{
+    display: flex;
+}
+.datos-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.datos-usuario p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: white;
+    margin: 0 20px;
+    padding: 2px 0;
+}
+.icon_end-sesion{
+    height: 40%;
+    margin: auto 10px;
+    cursor:pointer;
+}
+/*header movile...........................*/
+.icon-menu-mobile{
+    height: 35px;
+    width: 35px;
+    margin: auto 10px;
+    color: #ffffff;
+    display: none;
+    cursor: pointer;
+    
+}
+
+/*nav-Desktop------------------------------------------------*/
+.nav-container{
+    background-color: #ffffff;
+    height: 100vh;
+    display: block;
+    width: 50px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+   
+}
+.nav-container ul{
+    z-index: ;
+    height:100%;
+    margin-top: 71px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.nav-container ul li{
+    width: 50px;
+    padding: 15px 0;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.nav-container ul li a{
+    text-decoration: none;
+    color: var(--principal-color);
+    margin-left: 20px;
+    padding-top: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: none;
+    
+}
+.nav-container ul li span{
+    margin-left: 15px;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    color: rgb(134, 134, 134);
+}
+
+/*Hover dentro del nav-menu............................*/
+.nav-container ul li:hover{
+    width: 220px;
+    display: block;
+    background-color:#3a0074;
+    border-radius: 0 25px 25px 0  ;
+}
+.nav-container ul li:hover > a{
+display: inline-block;
+color: white;
+}
+.nav-container ul li:hover > span{
+    color: white; 
+}
+
+/*panel principal---------------------------------------------------*/
+
+section{
+    margin-left: 50px;
+    padding: 0;
+}
+section > div{
+    width: 85%;
+    margin: auto;
+    background-color: #ffffff;
+    display:flex;
+    padding:2%;
+}
+/*paneles de arriba   ---------------------------------------------------*/
+
+.info-home{
+    margin: 85px auto 20px auto;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-home div:nth-child(1){
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+.info-home > div > p:nth-child(2){
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+.info-home > div > p:nth-child(4){
+    font-size: 18px;
+    color: #eb0f0f;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.info-home > div > p{
+    margin: 0;
+    font-size: 13px;
+    color: gray ;
+}
+#info-tasa{
+    display: flex;
+    align-items: center;
+    margin-right: 38%;
+}
+#info-tasa > div:nth-child(1){
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: white;
+    justify-content: center;
+    border: #630091 solid 10px;
+    /*
+    border-color: rgba(75, 0, 130, 1) rgba(255, 255, 0, 1) rgba(255, 255, 0, 1) rgba(75, 0, 130, 1);;
+    */
+    box-shadow: #d54aff 0px 0px 5px;
+}
+#info-tasa div p{
+    font-family: sans-serif;
+   
+    padding: 1px;
+    text-align: center;
+
+}
+.tasa-letra{
+    margin-top: -18px;
+    margin-bottom: 0;
+}
+.tasa{
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+#info-tasa > div:nth-child(2){
+    font-size: 13px;
+    align-items: center;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -1px;
+}
+.actualizada > p{
+    margin: 0;
+
+}
+.actualizada > p:nth-child(1){
+    font-weight: bold;
+}
+
+
+
+/*paneles abajo    ---------------------------------------------------*/
+.paneles{
+    flex-wrap: wrap; 
+}
+.paneles > div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 16%;
+    height: 120px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgb(197, 197, 197);
+    margin: 2%;
+    cursor: pointer;
+}
+
+.paneles div p{
+    font-size: 23px;
+    margin: 0;
+    padding-top: 33px;
+    text-align: center;
+    color: #421e53;
+    width: 100%;
+    height: 100%;
+}
+.paneles div p span{
+    font-family: sans-serif;
+    font-size: 14px;
+    
+}
+.paneles div:hover p {
+    color: rgb(0, 0, 0);
+    box-shadow:  rgb(139, 139, 139)  0px 0 5px;
+  } 
+/*botones de panel principal CON COLORES----------------------------------------*/
+/*
+.paneles div:hover .Nueva-transferencia {
+  color: rgb(43, 201, 22);
+  box-shadow:  rgb(161, 255, 174)  0px 0 20px;
+}  
+.paneles div:hover .Transferencias{
+    color: rgb(166, 19, 224);
+    box-shadow:  rgb(153, 67, 211)  0px 0 5px;
+}
+.Solicitudes{
+    color: #6d3b3b;
+}
+.Usuarios{
+    color: #006bc2;
+}
+.Reporte-diario{
+    color: #007e73;
+}
+.paneles div:hover .Movimientos{
+    color: #28aa00;
+    box-shadow:  rgb(82, 248, 109)  0px 0 20px;
+}
+.paneles div:hover .Registros{
+    color: rgb(97, 97, 97);
+    box-shadow:  rgb(160, 160, 160)  0px 0 20px;
+}*/
+.Configuraciones{
+    color: rgb(211, 0, 0);
+}
+
+/*un poco responsivo.....................................*/
+@media (max-width: 900px){
+    .paneles div{
+        width: 28%;
+        height: 100px;
+        margin: 2.65%;  
+    }
+    .paneles div p SPAN{
+        font-size:12px;
+    }
+    #info-tasa{
+        margin-right: 5%;
+    }
+}
+/*Diseño Responsivo----------------------------------------------*/
+@media (max-width: 640px){
+    .icon-menu-mobile{
+        display: inline-block;
+    }
+    .datos-usuario {
+       display: none;
+    }
+    .logo{
+        height: 50%;
+    }
+    .nav-container{
+       
+        display: none;
+      
+        z-index: 5;
+    }
+    .nav-container ul li a{
+        display: inline-block;
+    }
+    .nav-container ul li{
+       
+        width: 210px;
+        border-bottom: rgb(230, 177, 255) solid 1px;
+        box-shadow: #000000 solid 5px;
+        box-shadow: 100px;
+    }
+    .nav-container{
+        height:0;
+    }
+    .nav-container ul li span{
+        color: #3a0074;
+    }
+    .nav-container ul li:hover{
+        width: 210px;
+        display: block;
+        background-color:#3a0074;
+        border-radius: 0;
+    }
+    section{
+        margin: 0 2%;
+    }
+    section div{
+        width: 100%;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #info-tasa{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .info-home{
+        height: auto;
+    }
+}
+/*para dispositivos super pequeños...........................*/
+@media (max-width: 400px){
+    .paneles div{
+        width: 40%;
+        height: 100px;
+        margin: 5%;  
+    }
+}
+/*.............................................................*/
+
+.inactive{
+    display: flex;
+}
