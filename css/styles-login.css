@@ -110,7 +110,7 @@ input{
     color: #000000;
     text-align: center;
     width: 200px;
-    height: 20px;
+    height: 40px;
     background-color: #ffff00;
     border-radius: 4px;
     text-decoration: none;
@@ -134,6 +134,20 @@ input{
 
 
 @media (max-width: 700px) {
+
+
+    .div-login{
+        height: calc(100vh - 30px);
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 400px;
+        background-color: #3a0074e8;
+    }
+
+
+
 
     .info-desktop{
         display: none;
