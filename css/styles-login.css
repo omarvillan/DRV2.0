@@ -17,11 +17,7 @@ body{
 section{
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
-    background: url(/img/background-venezuela2.jpg) ;
-=======
-    background: url(img/background-venezuela2.png) ;
->>>>>>> 860a436 ( cambio de formato de jpg a png)
+    background: url(../img/background-venezuela2.jpg) ;
     background-size: 100% 100vh;   
 }
 
@@ -185,9 +181,10 @@ input{
         width: 100%;
     }
     section{
-        background: url(img/background-venezuela1.jpg) ;
+        background: url(../img/background-venezuela1.jpg) ;
         background-size: auto 100%;
         background-position: center;
     }
 
 }
+ 
