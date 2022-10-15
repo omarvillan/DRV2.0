@@ -225,6 +225,12 @@ div p{
         background-position:top;
         background-size: cover;
         
+        position:absolute;
+        bottom: 0px;
+        top: 0;
+        left: 0;
+        right: 0;
+        
     }
     .container-izquierda{
         display: none;
@@ -232,11 +238,12 @@ div p{
     .container-derecha{
         width: 100%;
         background-color:rgba(51, 4, 112, 0.678);
-        height: calc(100vh);
+        height: 100%;
         bottom: 0px;
 
 
-        display: inline-block;
+        justify-content:center;
+
        
     }
     .logo-2{
