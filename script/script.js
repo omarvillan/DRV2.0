@@ -19,11 +19,11 @@ iconMenuMobile.addEventListener('click', toggleMobileMenu)
 blackScreen.addEventListener('click', closedDiv)
 
 function toggleMobileMenu(){
-    menuMobile.classList.toggle('inactive');
-    blackScreen.classList.toggle('inactive');
+    menuMobile.classList.toggle('active');
+    blackScreen.classList.toggle('active');
 }
 
 function closedDiv(){
-    menuMobile.classList.remove('inactive');
-    blackScreen.classList.remove('inactive');
+    menuMobile.classList.remove('active');
+    blackScreen.classList.remove('active');
 }

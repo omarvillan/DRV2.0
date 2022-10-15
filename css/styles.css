@@ -65,8 +65,9 @@ body{
 .icon_end-sesion{
     height: 40%;
     margin: auto 10px;
-    cursor:pointer;
+    /* cursor:pointer; */
 }
+
 /*header movile...........................*/
 .icon-menu-mobile{
     height: 35px;
@@ -184,11 +185,14 @@ section > div{
     font-size: 13px;
     color: gray ;
 }
+
 #info-tasa{
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-right: 38%;
 }
+
 #info-tasa > div:nth-child(1){
     border-radius: 100px;
     width: 90px;
@@ -253,7 +257,7 @@ section > div{
     cursor: pointer;
 }
 
-.paneles div p{
+.paneles div a{
     font-size: 23px;
     margin: 0;
     padding-top: 33px;
@@ -261,16 +265,20 @@ section > div{
     color: #421e53;
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
-.paneles div p span{
+.paneles div a span{
     font-family: sans-serif;
     font-size: 14px;
     
 }
-.paneles div:hover p {
+.paneles div:hover a {
     color: rgb(0, 0, 0);
     box-shadow:  rgb(139, 139, 139)  0px 0 5px;
+  
   } 
+
+
 /*botones de panel principal CON COLORES----------------------------------------*/
 /*
 .paneles div:hover .Nueva-transferencia {
@@ -370,6 +378,11 @@ section > div{
     }
     .info-home{
         height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
     }
 }
 /*para dispositivos super pequeños...........................*/
