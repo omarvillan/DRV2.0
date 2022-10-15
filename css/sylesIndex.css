@@ -1,7 +1,10 @@
+/* 4d0cb9 */
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 *{
     margin: 0;
@@ -9,13 +12,22 @@ body{
     font-family: sans-serif;
     
 }
+
+
+
 main{
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     background: url(../img/background-venezuela2.jpg) ;
     background-size:cover;
+    box-sizing: border-box;
 }
+
+
+
+
+
 
 
 
@@ -66,8 +78,7 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     width: 320px;
-    background-color:rgb(69, 0, 160);
-   
+    background-color:rgba(46, 0, 155, 0.829);
     padding: 0 40px 0 40px;
     height: 100vh;
 }
@@ -213,14 +224,17 @@ div p{
         background: url(../img/background-venezuela1.jpg);
         background-position:top;
         background-size: cover;
+        
     }
     .container-izquierda{
         display: none;
     }
     .container-derecha{
         margin: 0 auto;
-        width: 100%;
+        width: 100vh;
         background-color:rgba(51, 4, 112, 0.678);
+        height: calc(100vh - 50px);
+        bottom: 0px;
     }
     .logo-2{
         display: inline-block;
