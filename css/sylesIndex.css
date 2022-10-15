@@ -84,6 +84,10 @@ h1{
 }
 .logo-2{
     display: none;
+    width: 150px;
+    margin: 10px auto 100px auto;
+    place-items: center;
+
 }
 .iniciar-sesion{
     font-size: 20px;
@@ -224,12 +228,11 @@ div p{
         background: url(../img/background-venezuela1.jpg);
         background-position:top;
         background-size: cover;
-        position:absolute;
+        position:fixed;
         bottom: 0px;
         top: 0;
         left: 0;
         right: 0;
-        
     }
     .container-izquierda{
         display: none;
@@ -240,24 +243,24 @@ div p{
         height: 100%;
     }
     .logo-2{
-        display: inline-block;
-        width: 150px;
-    }
-    .logo2{
-        margin: 10px auto 0 auto;
+        display: grid;
     }
     .iniciar-sesion{
-        font-size: 15px;
-        margin-top: -180px;
+        font-size: 17px;
+        margin-bottom: -10px ;
     }
     .form{
     width: 100%;
     max-width: 600px;
     background-color: rgba(255, 255, 255, 0);
-    height: 50px;
+    height: 60px;
+    
+    }
+    .form:nth-child(2n+1){
+        margin-bottom: -5px;
     }
     form  div input{
-        height: 70px;
+        height: 90px;
         font-size: 15px;
         /* font-weight: bold; */
 
@@ -271,12 +274,12 @@ div p{
     }
     form div input:focus + .lbl-nombre .text-nomb,
     form div input:valid + .lbl-nombre .text-nomb{
-        transform: translateY(-170%);
+        transform: translateY(-200%);
         font-size: 10px;
         color: #ffffff;
     }
     div p{
-        font-size: 10px;
+        font-size: 11px;
         font-weight: bold;
     }
     .input-submit{
