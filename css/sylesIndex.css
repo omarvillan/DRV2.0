@@ -233,10 +233,9 @@ div p{
     main{
         z-index: -3;
         background: url(../img/background-venezuela1.jpg);
-        background-position:fixed;
-        background-position-y: unset;
+        background-position:inherit;
         background-size: cover;
-        position:fixed;
+        position:absolute;
         bottom: 0px;
         top: 0;
         left: 0;
@@ -256,7 +255,8 @@ div p{
     }
     .iniciar-sesion{
         font-size: 17px;
-        margin-bottom: -10px ;
+        /* margin-bottom: 0; */
+        font-weight: bold;
     }
     .form{
     width: 100%;
