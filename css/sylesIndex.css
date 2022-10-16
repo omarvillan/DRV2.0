@@ -243,12 +243,14 @@ div p{
     .container-izquierda{
         display: none;
     }
-    /* .container-derecha{
-        z-index: -2;
+    .container-derecha{
+        width: 100%;
+        height: 100%;
+        /* z-index: -2;
         width: 100%;
         background-color:rgba(51, 4, 112, 0.678);
-        height: 100%;
-    } */
+        height: 100%; */
+    } 
     .logo-2{
         display: grid;
     }
@@ -301,7 +303,7 @@ div p{
         cursor: pointer;
     }
     .horario1{
-      
+      display: none;
         /* position: fixed;
         bottom: 0px;
         left: 0;
@@ -310,9 +312,9 @@ div p{
         place-content: center;
         width: 100% */
     }
-    .horario1 a{
+    /* .horario1 a{
         width: 100%;
-    }
+    } */
   
 
 }
