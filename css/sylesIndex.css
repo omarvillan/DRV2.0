@@ -231,6 +231,7 @@ div p{
 
 @media (max-width: 700px) {
     main{
+        z-index: -3;
         background: url(../img/background-venezuela1.jpg);
         background-position:fixed;
         background-position-y: unset;
@@ -245,6 +246,7 @@ div p{
         display: none;
     }
     .container-derecha{
+        z-index: -2;
         width: 100%;
         background-color:rgba(51, 4, 112, 0.678);
         height: 100%;
@@ -300,6 +302,7 @@ div p{
         cursor: pointer;
     }
     .horario1{
+        z-index: -1;
         position: fixed;
         bottom: 0px;
         left: 0;
