@@ -204,8 +204,7 @@ div p{
 }
 .horario1{
     margin-bottom: 20px;
-    display: grid;
-    place-content: center;
+   
     width: 100%
 }
 .horario1 a{
@@ -230,8 +229,8 @@ div p{
 
 
 @media (max-width: 700px) {
-    main{
-        z-index: -3;
+     main{
+        
         background: url(../img/background-venezuela1.jpg);
         background-position:inherit;
         background-size: cover;
@@ -244,12 +243,12 @@ div p{
     .container-izquierda{
         display: none;
     }
-    .container-derecha{
+    /* .container-derecha{
         z-index: -2;
         width: 100%;
         background-color:rgba(51, 4, 112, 0.678);
         height: 100%;
-    }
+    } */
     .logo-2{
         display: grid;
     }
@@ -302,14 +301,14 @@ div p{
         cursor: pointer;
     }
     .horario1{
-        z-index: -1;
-        position: fixed;
+      
+        /* position: fixed;
         bottom: 0px;
         left: 0;
         margin-bottom: 20px;
         display: grid;
         place-content: center;
-        width: 100%
+        width: 100% */
     }
     .horario1 a{
         width: 100%;
