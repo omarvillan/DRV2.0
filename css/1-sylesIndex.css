@@ -19,7 +19,7 @@ main{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    background: url(../img/background-venezuela2.jpg) ;
+    background: url(../img/background-venezuela3.jpg) ;
     background-size:cover;
     box-sizing: border-box;
 }
