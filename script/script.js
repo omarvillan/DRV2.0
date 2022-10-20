@@ -15,6 +15,18 @@ const menuMobile = document.querySelector(".nav-container");
 const blackScreen = document.querySelector(".black-screen");
 const transferContainer = document.querySelector('.transfer-container');
 const divContainer = document.querySelector('.container');
+const divTransferencias = document.querySelector('.transferencias');
+const nCuenta = document.querySelector('.nCuenta');
+const cedula = document.querySelector('.cedula');
+const vacio = document.querySelector('.vacio');
+const distribuidora = document.querySelector('.distribuidora');
+const datosDeTransferencia = document.querySelector('.transferencias');
+
+
+
+
+
+
 
 iconMenuMobile.addEventListener('click', toggleMobileMenu)
 blackScreen.addEventListener('click', closedDiv)
@@ -98,6 +110,8 @@ transferList.push({
 
 
 
+    
+
 
 
 
@@ -113,109 +127,102 @@ transferList.push({
                 const idTransferencia = document.createElement('span');
                 idTransferencia.innerText = datos.idi;
                 
-                
-
                 const fechaTransferencia = document.createElement('span');
                 fechaTransferencia.innerHTML = datos.fecha +'<br>'+ datos.hora;
-
-
-                const datosSpan = document.createElement('div');
-                datosSpan.classList.add('span');
                 
-                    const nombreDistri = document.createElement('div');
-                    nombreDistri.classList.add('nombreDistri');
+                const nombreDistri = document.createElement('div');
+                nombreDistri.classList.add('divNombre');
 
-                        const nombreTransferencia = document.createElement('span');
-                        nombreTransferencia.innerText = datos.nombre;
+                            const nombreTransferencia = document.createElement('span');
+                            nombreTransferencia.innerText = datos.nombre;
 
-                        const documentoTransferencia = document.createElement('span');
-                        documentoTransferencia.innerText = datos.documento;
+                            const documentoTransferencia = document.createElement('span');
+                            documentoTransferencia.innerText = datos.documento;
 
-                    const bancoDistri = document.createElement('div');
-                    bancoDistri.classList.add('bancoDistri');
+                const bancoDistri = document.createElement('div');
+                bancoDistri.classList.add('divBanco');
 
-                        const bancoTransferencia = document.createElement('span');
-                        bancoTransferencia.innerText = datos.banco;
+                            const bancoTransferencia = document.createElement('span');
+                            bancoTransferencia.innerText = datos.banco;
 
-                        const cuentaTransferencia = document.createElement('span');
-                        cuentaTransferencia.innerText = datos.cuenta;
+                            const cuentaTransferencia = document.createElement('span');
+                            cuentaTransferencia.innerText = datos.cuenta;
 
+                const divBolivares = document.createElement('div');
+                divBolivares.classList.add('divBolivares');
 
-                const signoBs = document.createElement('span');
-                signoBs.innerText = "bs";
-        
+                            const signoBs = document.createElement('span');
+                            signoBs.innerText = "bs";
 
-                const bsTransferencia = document.createElement('span');
-                bsTransferencia.innerText = (datos.pesos / datos.tasa).toFixed(2);
+                            const bsTransferencia = document.createElement('span');
+                            bsTransferencia.innerText = (datos.pesos / datos.tasa).toFixed(2);
                 
+                const divDistri = document.createElement('div');
+                divDistri.classList.add('divDistri');
 
-                const pesosTransferencia = document.createElement('span');
-                pesosTransferencia.innerText = '$ ' + datos.pesos;
+                        const pesosTransferencia = document.createElement('span');
+                        pesosTransferencia.innerText = '$ ' + datos.pesos;
 
-                const distribuidorTransferencia = document.createElement('span');
-                distribuidorTransferencia.innerText = datos.distribuidor;
+                        const distribuidorTransferencia = document.createElement('span');
+                        distribuidorTransferencia.innerText = datos.distribuidor;
                 
-
                 const detalleTransferencia = document.createElement('div');
                 detalleTransferencia.classList.add('detalle');
 
-                    const captureTransferencia = document.createElement('div');
-                    captureTransferencia.classList.add('capture-container');
+                        const captureTransferencia = document.createElement('div');
+                        captureTransferencia.classList.add('capture-container');
 
-                        const buttoncapture = document.createElement('button');
-                        buttoncapture.classList.add('icon-file-picture');
+                            const buttoncapture = document.createElement('button');
+                            buttoncapture.classList.add('icon-file-picture');
 
-                    const buttondetalle = document.createElement('button');
-                    buttondetalle.classList.add('icon-profile');
-
-
-            captureTransferencia.appendChild(buttoncapture);
-            detalleTransferencia.appendChild(captureTransferencia);
-            detalleTransferencia.appendChild(buttondetalle);
-
-            nombreDistri.appendChild(nombreTransferencia);
-            nombreDistri.appendChild(documentoTransferencia);
-            datosSpan.appendChild(nombreDistri);
-
-            bancoDistri.appendChild(bancoTransferencia);
-            bancoDistri.appendChild(cuentaTransferencia);
-            datosSpan.appendChild(bancoDistri);
+                        const buttondetalle = document.createElement('button');
+                        buttondetalle.classList.add('icon-profile');
 
 
-            signoBs
+
             datosDeTransferencia.appendChild(idTransferencia);
             datosDeTransferencia.appendChild(fechaTransferencia);
-            datosDeTransferencia.appendChild(datosSpan);
-            datosDeTransferencia.appendChild(signoBs);
-            datosDeTransferencia.appendChild(bsTransferencia);
-            datosDeTransferencia.appendChild(pesosTransferencia);
-            datosDeTransferencia.appendChild(distribuidorTransferencia);
+            datosDeTransferencia.appendChild(nombreDistri);
+                    nombreDistri.appendChild(nombreTransferencia);
+                    nombreDistri.appendChild(documentoTransferencia);
+            datosDeTransferencia.appendChild(bancoDistri);
+                    bancoDistri.appendChild(bancoTransferencia);
+                    bancoDistri.appendChild(cuentaTransferencia);
+            datosDeTransferencia.appendChild(divBolivares);
+                    divBolivares.appendChild(signoBs);
+                    divBolivares.appendChild(bsTransferencia);
+            datosDeTransferencia.appendChild(divDistri);
+                    divDistri.appendChild(pesosTransferencia);
+                    divDistri.appendChild(distribuidorTransferencia);
             datosDeTransferencia.appendChild(detalleTransferencia);
+                    detalleTransferencia.appendChild(captureTransferencia);
+                        captureTransferencia.appendChild(buttoncapture);
+                    detalleTransferencia.appendChild(buttondetalle);
 
+        transferContainer.appendChild(datosDeTransferencia);
+         
+     
 
-            transferContainer.appendChild(datosDeTransferencia);
+  
+        const botonAdm = document.querySelector('.icon-spinner11');
 
+        botonAdm.addEventListener('click', agregarClaseAdmin);
 
 
                             function agregarClaseAdmin(){
-                                datosDeTransferencia.classList.add('contAdm');
-                                idTransferencia.classList.add('fueraId');
-                                datosSpan.classList.add('spanAdm');
-                                nombreDistri.classList.add('adm');
-                                bancoDistri.classList.add('adm');
-                                bsTransferencia.classList.add('adm');
-                                distribuidorTransferencia.classList.add('adm');
-                                detalleTransferencia.classList.add('divAdm');
-                                divContainer.classList.add('divContainerAdm');
-                                signoBs.classList.add('signoBs');
+                                datosDeTransferencia.classList.toggle('contAdm');
+                                divTransferencias.classList.toggle('contAdm');
+                                cedula.classList.toggle('vacio');
+                                nCuenta.classList.toggle('vacio');
+                                distribuidora.classList.toggle('vacio');
                             }
-                            agregarClaseAdmin()
+                           
 
-
-
+                            // agregarClaseAdmin()
             
         }
     }
     renderDatos(transferList);
+
 
     
