@@ -18,9 +18,7 @@ body{
     background-color: #00000081;
     display: none; 
 }
-.active{
-    display: inline-block;
-}
+
 
 /*----------------------HEADER-----------------------------------------------------*/
 
@@ -157,6 +155,32 @@ section > div{
  
     box-sizing: border-box;
 }
+.container > div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container > div:nth-child(1) > div{
+    display: none;
+}
+.container > div:nth-child(1) > div span {
+    color: #838080;
+    font-size: 12px;
+    font-weight: bold;
+}
+.container > div:nth-child(1) > div button{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: rgb(255, 239, 13);
+    box-shadow: #310080 0 0 3px;
+    margin-right: 5px;
+}
+.container > div:nth-child(1) > div button:active{
+    background-color:#310080;
+    color: #fff;
+}
 
 
 
@@ -170,26 +194,39 @@ section > div{
     font-weight: bold;
     font-size: 20px;
 }
+.container .filters > button:nth-child(1){
+   display: none;
+    width: 100%;
+}
+
 .container .filters{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
-.container .filters input,
-.container .filters select{
-    width: 20%;
-    height: 40px;
-    border-radius: 0px;
-    border: #b6b6b6 solid 1px;
-    padding: 0 10px;
-    outline: none;
-}
-.container .filters > div{
-    width: 11%;
+.container .filters > div:nth-child(2){
+    width: 85%;
     display: flex;
     justify-content: space-between;
 }
-.container .filters button{
+.container .filters > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 14%;
+
+}
+
+.container .filters div input,
+.container .filters div select{
+    width: 24%;
+    height: 40px;
+    padding: 0 10px;
+}
+
+
+.container .filters > div button{
     background-color: #310080;
     height: 40px;
     width: 40px;
@@ -197,10 +234,11 @@ section > div{
     font-size: 15px;
     border: none;
     cursor: pointer;
+    border-radius: 2px;
 }
-.container .filters button:hover{
-    background-color: #4a02be;
-}
+
+
+
 /* -------------------------------transferencias------------------------------------ */
 .transfer-container{
     display: flex;
@@ -410,8 +448,8 @@ text-align: center;
     nav{
         z-index: 2;
         display: none;
-        height: 360px;
-        width: 230px;
+        height: 370px;
+        width: 210px;
         background-color: #3a0074;
     }
     .item-nav{
@@ -429,10 +467,55 @@ text-align: center;
     section{
         margin:80px 0 0 0px;
     }
+/* ----------------------------filtro--------------------------------------- */
+.container .filters{
+    flex-direction: column;
+}
+.container .filters > div{
+    flex-direction: column;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+}
+.container .filters div input,
+.container .filters div select{
+
+    width: 95%;
+    margin-bottom: 5px;
+    border: #b8b8b8 solid 1px;
+    outline: none;
+    
+}
+
+.container .filters > button:nth-child(1){
+    display: flex;
+    font-weight: bold;
+    font-size: 13px;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    background-color: #dddddd;
+    box-shadow: #080808 0 0 2px;
+    margin-bottom: 1px;
+}
+/* --------------------------el filtro---------------------------- */
+.container .filters > div:nth-child(2){
+    background-color: #dadada;
+    border: #cfcdcd solid 1px;
+    padding-top: 10px;
+    display: none;
+}
+/* ----------------------------------------------------------------- */
+.container .filters > div:nth-child(3) button{
+    margin-top: 10px;
+    width: 48%;
+
+}
 
 
-
-
+/* -------------------------------------------------------------------------- */
     .paneles div p SPAN{
         font-size:12px;
     }
@@ -484,6 +567,10 @@ text-align: center;
 
 
 /* -----------------VERSION Administrador------------------------ */
+
+.container > div:nth-child(1) > div{
+    display: inline-block;
+}
 
     .contAdm span{
         font-size: 12px !important;
@@ -761,4 +848,23 @@ text-align: center;
         font-size: 9px !important;
         
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.active{
+    display: flex !important;
 }

@@ -57,35 +57,44 @@
 
     <section>
        <div class="container">
-
-            <span class="pagina-titulo">Transferencias</span>
+            <div class="div-del-titulo">
+                <span class="pagina-titulo">Transferencias</span>
+                <div>
+                    <span>Cambiar vista</span>
+                    <button class="icon-loop2"></button>
+                </div>
+            </div>
             <div class="filters">
-                <input type="date">
-                <select name="select-bancos" id="select-bancos">
-                    <!-- <option value selected disabled>Banco</option> -->
-                    <option value="Todos" selected>Todos</option>
+                <button class="filtrobutton">Filtro</button>
+                <div class="verdaderoFiltro">
+                    <input type="date">
+                    <select name="select-bancos" id="select-bancos">
+                        <!-- <option value selected disabled>Banco</option> -->
+                        <option value="Todos" selected>Todos</option>
 
-<!----------------- insertar con JS----------------------------------------------------------------- -->
-                    <option value="Banesco" selected>Banesco</option>
-                    <option value="Bancaribe" selected>Bancaribe</option>
-                    <option value="Banplus" selected>Banplus</option>
-                    <option value="Bnc" selected>Bnc</option>
-                    <option value="Bod" selected>Bod</option>
-                    <option value="Mercantil" selected>Mercantil</option>
-                    <option value="Provincial" selected>Provincial</option>
-                    <option value="Sofitasa" selected>Sofitasa</option>
-                    <option value="Venezuela" selected>Venezuela</option>
-                    <option value="Otro" selected>Otro</option>
-                    <option value selected disabled>Banco</option>
-<!------------------------------------------------------------------------------------------------------>
-                
-                </select>
-                <input type="text" placeholder="Distribuidor">
-                <input type="text" placeholder="Monto">
+    <!----------------- insertar con JS----------------------------------------------------------------- -->
+                        <option value="Banesco" selected>Banesco</option>
+                        <option value="Bancaribe" selected>Bancaribe</option>
+                        <option value="Banplus" selected>Banplus</option>
+                        <option value="Bnc" selected>Bnc</option>
+                        <option value="Bod" selected>Bod</option>
+                        <option value="Mercantil" selected>Mercantil</option>
+                        <option value="Provincial" selected>Provincial</option>
+                        <option value="Sofitasa" selected>Sofitasa</option>
+                        <option value="Venezuela" selected>Venezuela</option>
+                        <option value="Otro" selected>Otro</option>
+                        <option value selected disabled>Banco</option>
+    <!------------------------------------------------------------------------------------------------------>
+                    
+                    </select>
+                    <input type="text" placeholder="Distribuidor">
+                    <input type="text" placeholder="Monto">
+                </div>
                 <div>
                     <button class="icon-search"></button>
                     <button class="icon-spinner11"></button>
                 </div>
+                
             </div>
 
 

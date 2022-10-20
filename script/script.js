@@ -21,7 +21,8 @@ const cedula = document.querySelector('.cedula');
 const vacio = document.querySelector('.vacio');
 const distribuidora = document.querySelector('.distribuidora');
 const datosDeTransferencia = document.querySelector('.transferencias');
-
+const botonFiltro = document.querySelector('.filtrobutton');
+const filtro = document.querySelector('.verdaderoFiltro');
 
 
 
@@ -41,6 +42,12 @@ function closedDiv(){
     blackScreen.classList.remove('active');
 }
 
+
+botonFiltro.addEventListener('click', toggleMostrarFiltro)
+
+function toggleMostrarFiltro(){
+    filtro.classList.toggle('active');
+}
 
 
 
@@ -98,7 +105,7 @@ transferList.push({
 
     transferList.push({
         tasa:622,
-        idi: 30304,
+        idi: 30305,
         fecha: "24-09-22",
         hora: "09:50",
         nombre: "pago movil",
@@ -122,6 +129,7 @@ transferList.push({
 
             const datosDeTransferencia = document.createElement('div');
             datosDeTransferencia.classList.add('transferencias');
+            datosDeTransferencia.setAttribute("id", datos.idi);
             
 
                 const idTransferencia = document.createElement('span');
@@ -177,6 +185,7 @@ transferList.push({
 
                         const buttondetalle = document.createElement('button');
                         buttondetalle.classList.add('icon-profile');
+                        buttondetalle.setAttribute("id", datos.idi);
 
 
 
@@ -204,10 +213,9 @@ transferList.push({
      
 
   
-        const botonAdm = document.querySelector('.icon-spinner11');
+        const botonAdm = document.querySelector('.icon-loop2');
 
         botonAdm.addEventListener('click', agregarClaseAdmin);
-
 
                             function agregarClaseAdmin(){
                                 datosDeTransferencia.classList.toggle('contAdm');
@@ -216,13 +224,11 @@ transferList.push({
                                 nCuenta.classList.toggle('vacio');
                                 distribuidora.classList.toggle('vacio');
                             }
-                           
-
+                        
                             // agregarClaseAdmin()
             
         }
     }
     renderDatos(transferList);
-
 
     
